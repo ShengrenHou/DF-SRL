@@ -1,7 +1,15 @@
-# DF-SRL: A Safety-Guaranteed Learning Algorithm for Voltage Regulation in Active Distribution Networks
+# DF-SRL: A Safety-Guaranteed Reinforcement Learning Algorithm for Voltage Regulation in Active Distribution Networks
 
-Source code for the paper: “A Safety-Guaranteed Learning Algorithm for Voltage Regulation in Active Distribution Networks”
-The code will be released when the manuscript is accepted.
+Source code for the paper: “A Safety-Guaranteed Reinforcement Learning Algorithm for Voltage Regulation in Active Distribution Networks.
 
 # Abstract 
-This paper develops a safe reinforcement learning algorithm to solve real-time voltage magnitude regulation issues in distribution networks. The proposed algorithm, namely DistFlow Safe Reinforcement Learning (DF-SRL), consistently ensures voltage magnitude constraints during the training and real-time operation (test) phases, achieving faster convergence and higher performance, setting it apart from soft-penalty and safe layer-based DRL methods. This is achieved by leveraging Dist-Flow linearization to construct an expert knowledge-based safety layer, which projects unsafe actions to safe ones by solving a quadratic programming problem. In the testing phase, the DF-SRL algorithm effectively maintains voltage magnitude constraints even under severe conditions (e.g. under-voltage problem caused by extreme loading at the margin node of the network), resulting in an operational cost reduction of 17.7\% compared to the benchmark algorithms, while ensuring feasibility throughout the entire operation period. Comprehensive sensitivity analysis further enhances the algorithm's robustness by identifying an optimal balance between the feasibility and optimality of the defined actions. Despite requiring slightly more computational time due to the inclusion of the safety layer, the DF-SRL algorithm remains a promising solution for the real-time operation of distribution networks.
+The integration of distributed energy resources (DER) has escalated the challenge of voltage magnitude regulation in distribution networks. Model-based approaches, which rely on complex sequential mathematical formulations, can not meet real-time demand. Deep reinforcement learning (DRL) offers an alternative by utilizing offline training with distribution network simulators and then execution without online computation. However, DRL algorithms fail to enforce voltage magnitude constraints during training and testing, potentially leading to serious operational violations. To tackle these challenges, we introduce a novel safe reinforcement learning algorithm, the DistFlow Safe Reinforcement Learning (DF-SRL), designed specifically for real-time voltage magnitude regulation in distribution networks. The DF-SRL algorithm incorporates a DistFlow linearization to construct an expert knowledge-based safety layer. Subsequently, DF-SRL overlays this safety layer on top of the agent's policy, recalibrating unsafe actions to safe domains through a quadratic programming formulation. Simulation results show the proposed DF-SRL consistently ensures voltage magnitude constraints during the training and real-time operation (test) phases, achieving faster convergence and higher performance, setting it apart from (safe) DRL benchmarks.
+
+# Organization
+* Folder "data_sources" -- Historical and processed data for 18 nodes network.
+* script "DF-SRL" -- The algorithm we developed.
+* script "safe_battery_env"-- General environment and the safe layer we developed 
+* Run scripts DF-SRL.py after installing all packages. Please have a look for the code structure.
+
+# Recommended citation
+search this paper and cite.
