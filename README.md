@@ -1,4 +1,4 @@
-# DF-SRL: A Safety-Guaranteed Reinforcement Learning Algorithm for Voltage Regulation in Active Distribution Networks
+# DistFlow Safe Reinforcement Learning Algorithm for Voltage Magnitude Regulation in Distribution Networks
 
 Source code for the paper: “A Safety-Guaranteed Reinforcement Learning Algorithm for Voltage Regulation in Active Distribution Networks.
 
