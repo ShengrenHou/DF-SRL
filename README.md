@@ -12,4 +12,4 @@ The integration of distributed energy resources (DER) has escalated the challeng
 * Run scripts DF-SRL.py after installing all packages. Please have a look for the code structure.
 
 # Recommended citation
-search this paper and cite.
+Hou S, Fu A, Duque E M S, et al. DistFlow Safe Reinforcement Learning Algorithm for Voltage Magnitude Regulation in Distribution Networks[J]. Journal of Modern Power Systems and Clean Energy, 2024.
